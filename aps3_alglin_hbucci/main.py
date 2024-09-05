@@ -1,4 +1,4 @@
-import aps3_alglin_hbucci
+import my_lib
 import os
 from pathlib import Path
 from rich.console import Console
@@ -21,7 +21,7 @@ def print_info(custom_message : str = ""):
 @app.command()
 def demo():
     print("Hello world!")
-    aps3_alglin_hbucci.my_function()
+    my_lib.my_function()
     script_path = Path(os.path.abspath(__file__))
     parent_path = script_path.parent
     print("Script path:", script_path)

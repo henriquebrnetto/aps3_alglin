@@ -1,22 +1,22 @@
-# hello_world
-Um pacote minimalista em Python
+# Câmera Girando
+Um pacote em que abre a câmera do computador, e mostra a imagem ao vivo girando em Python.
+Há também outras interações disponíveis.
 
-Para instalar, você pode usar uma de duas maneiras.
+Para instalar, você pode usar o comando a seguir:
 
-A primeira maneira é clonar o repositório e fazer uma instalação local:
+    pip install git+https://github.com/henriquebrnetto/aps3_alglin.git
 
-    git clone https://github.com/tiagoft/hello_world.git
-    cd hello_world
-    pip install .
+Após instalar, o programa `aps3_alglin_hbucci-cli` deve estar instalado. Então, deve-se escrever no terminal:
 
-A segunda maneira é instalar direto do repositório:
+    
+    aps3_alglin_hbucci-cli demo
+    
 
-    pip install git+https://github.com/usuario/repositorio.git
-
-Após instalar, o programa `tiago_hello_world` deve estar instalado. Então, executando o comando:
-
-    tiago_hello_world
-
-seu programa deveria imprimir a string `Hello world!` na tela.
+seu programa deveria imprimir a string `Hello world!` na tela, e então abrir a câmera.
 
 
+Ao apertar a tecla:
+- `a`, a velocidade de rotação aumenta.
+- `b`, a velocidade de rotação diminui.
+- `e`, a imagem expande na vertical.
+- `c`, a imagem volta ao tamanho original.

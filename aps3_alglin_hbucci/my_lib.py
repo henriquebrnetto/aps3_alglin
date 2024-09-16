@@ -94,7 +94,7 @@ def run():
             t *= 2
         
         if cv.waitKey(1) == ord('e'):
-            E = np.array([[2, 0.5, 0], [0, 1, 0], [0, 0, 1]])
+            E = np.array([[0.2, 0, 0], [0, 1, 0], [0, 0, 1]])
             expand = True
         
         if cv.waitKey(1) == ord('c'):

@@ -1,4 +1,4 @@
-import my_lib
+import aps3_alglin_hbucci.my_lib as my_lib
 import os
 from pathlib import Path
 from rich.console import Console

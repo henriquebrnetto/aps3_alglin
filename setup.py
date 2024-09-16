@@ -24,10 +24,6 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/henriquebrnetto/aps3_alglin_hbucci",  # URL do repositório do seu projeto (se houver)
     packages=find_packages(),  # Encontra automaticamente todos os pacotes no diretório
-    package_data={
-    '': find_subdir(f'{MODULE_STUB}/assets'),
-    },
-    include_package_data=True,
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

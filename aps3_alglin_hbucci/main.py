@@ -24,6 +24,3 @@ def demo():
     my_lib.run()
     script_path = Path(os.path.abspath(__file__))
     print("Script path:", script_path)
-
-if __name__ == "__main__":
-    app()

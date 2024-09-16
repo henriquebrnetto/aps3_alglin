@@ -11,12 +11,6 @@ def criar_indices(min_i, max_i, min_j, max_j):
     idx = np.vstack( (idx_i, idx_j) )
     return idx
 
-def transform_image(image, M):
-    altura, largura, cores = image.shape
-    X = image.reshape(altura*largura, cores).T
-    image = (M @ X).T.reshape(altura, largura, cores)
-    return image
-
 def run():
     # Essa função abre a câmera. Depois desta linha, a luz de câmera (se seu computador tiver) deve ligar.
     cap = cv.VideoCapture(0)
@@ -30,8 +24,8 @@ def run():
     
     # Aqui, defino a largura e a altura da imagem com a qual quero trabalhar.
     # Dica: imagens menores precisam de menos processamento!!!
-    width = 320*2
-    height = 240*2
+    width = 320
+    height = 240
 
     # Talvez o programa não consiga abrir a câmera. Verifique se há outros dispositivos acessando sua câmera!
     if not cap.isOpened():
@@ -109,5 +103,3 @@ def run():
     # Ao sair do loop, vamos devolver cuidadosamente os recursos ao sistema!
     cap.release()
     cv.destroyAllWindows()
-
-run()
